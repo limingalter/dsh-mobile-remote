@@ -1,0 +1,22 @@
+# 安装脚本生成的启动器（每台机器的路径/端口都不同，不该进版本库）
+start-remote.cmd
+
+# 依赖目录
+node_modules/
+
+# 日志与临时文件
+*.log
+*.tmp
+*.bak
+
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+
+# 本地覆盖配置
+*.local.*
