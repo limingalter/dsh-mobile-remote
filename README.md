@@ -18,7 +18,17 @@ profile、插件与会话历史。
 
 - Windows 10 / 11
 - DeepSeek Harness 桌面版（已安装并至少启动过一次）
-- [Tailscale](https://tailscale.com/) 账号（免费个人版即可），电脑与手机登录同一账号
+- [Tailscale](https://tailscale.com/download) 账号（免费个人版即可），电脑与手机登录同一账号
+
+Tailscale 客户端本仓库**不打包分发**（官方更新频繁，自己装才能一直拿到最新版）：
+
+```powershell
+# Windows
+winget install --id Tailscale.Tailscale -e
+```
+
+安卓端从 [官方下载页](https://tailscale.com/download) 或 Google Play 安装。
+这样装出来的版本会自动跟随官方更新，避免出现旧客户端连不上的问题。
 
 ## 安装
 
