@@ -50,6 +50,13 @@ winget install --id Tailscale.Tailscale -e
    也可以在安装时加 `-Serve` 让脚本自动执行。
 
 6. 双击生成的 `D:\dsh-work\start-remote.cmd`
+
+   - 窗口里会打印一个带 `?token=` 的完整 URL，手机**首次**访问需要它
+   - 脚本带了 `--no-open`，**不会**自动弹出浏览器；想先在电脑上确认链路是否通，
+     把窗口里打印的 URL 复制出来自己打开即可
+   - 如果**桌面端 DSH 还在运行**，双击后会因为端口被占用而失败，窗口显示
+     `[WARN] Port 3080 is already in use.` —— 此时请**完全退出桌面端 DSH**
+     （确认托盘和任务管理器里都没有残留进程），再重新双击
 7. 手机安装 Tailscale 并登录同一账号，浏览器打开 `https://<设备名>.<tailnet>.ts.net/`
 8. 首次访问需要启动窗口里打印的 `?token=...` 完整 URL；成功后 cookie 保留 30 天
 

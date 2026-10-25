@@ -170,7 +170,7 @@ if not errorlevel 1 (
   exit /b 1
 )
 
-"$dsh" --profile $ProfileName --host 127.0.0.1 --port $Port --trusted-host $domain --public-url https://$domain/
+"$dsh" --profile $ProfileName --host 127.0.0.1 --port $Port --trusted-host $domain --public-url https://$domain/ --no-open
 
 echo.
 echo Host exited with code %ERRORLEVEL%.
